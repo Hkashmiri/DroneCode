@@ -1,0 +1,15 @@
+
+a = input('enter a thing for hair')
+def drawface(shift,a,ebs,es,n,m):
+    print(' '*shift, a*7)
+    print(' '*shift+a*9)
+    print(' '*shift+a*11)
+    print(' '*shift+'*', ebs+'   '+ebs+'   '+'*')
+    print(' '*shift+'* ', es+'  ', es+' ', '*')
+    print(' '*shift+'*', ' '*2, n, ' '*2, '*')
+    print(' '*shift+'*', ' '*7, '*')
+    print(' '*shift+'*', m, ' *')
+    print(' '*shift+'*', ' '*7, '*')
+    print(' '*shift+' ', '*'*6, ' ')
+drawface(5,'@', '#', '4', 'i', 'mlmmmm')
+drawface(1, '&', '1', '5', 'n', 'mmmmmm')

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer Evaluation Form</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #555;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+        textarea {
+            width: 100%;
+            height: 80px;
+            margin-bottom: 15px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: none;
+        }
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5c78b8;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Peer Evaluation Form</h1>
+        <label for="evaluatorName">Your Name:</label>
+        <input type="text" id="evaluatorName" name="evaluatorName" placeholder="Enter your name" required>
+
+        <label for="teamMemberName">Team Member Name:</label>
+        <input type="text" id="teamMemberName" name="teamMemberName" placeholder="Enter the team member's name" required>
+
+        <label for="contribution">Contribution to the Project (1-5):</label>
+        <select id="contribution" name="contribution" required>
+            <option value="" disabled selected>Select rating</option>
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Very Good</option>
+            <option value="5">5 - Excellent</option>
+        </select>
+
+        <label for="communication">Communication Skills (1-5):</label>
+        <select id="communication" name="communication" required>
+            <option value="" disabled selected>Select rating</option>
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Very Good</option>
+            <option value="5">5 - Excellent</option>
+        </select>
+
+        <label for="teamwork">Teamwork and Collaboration (1-5):</label>
+        <select id="teamwork" name="teamwork" required>
+            <option value="" disabled selected>Select rating</option>
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Very Good</option>
+            <option value="5">5 - Excellent</option>
+        </select>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" placeholder="Provide any additional feedback here"></textarea>
+
+        <button type="submit">Submit Evaluation</button>
+    </form>
+</body>
+</html>
